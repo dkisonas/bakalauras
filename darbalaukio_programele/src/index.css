@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .table-btn-wrap {
+    @apply relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6
+  }
+
+  .th-first {
+    @apply py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6
+  }
+
+  .th {
+    @apply px-3 py-3.5 text-left text-sm font-semibold text-gray-900
+  }
+
+  .td-first {
+    @apply whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6
+  }
+
+  .td {
+    @apply whitespace-nowrap px-3 py-4 text-sm text-gray-500
+  }
+  
+  .tbody {
+    @apply divide-y divide-gray-200 bg-white
+  }
+
+}
